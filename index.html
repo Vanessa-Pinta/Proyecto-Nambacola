@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parroquia Nambacola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#atractivos">ATRACTIVOS</a></li>
+            <li><a href="#auspiciantes">AUSPICIANTES</a></li>
+        </ul>
+
+        <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    </nav>
+
+    <section id="inicio" class="section">
+        <h1>BIENVENIDOS A NAMBACOLA</h1>
+        <p>Descubre la belleza y cultura de Nambacola, un lugar lleno de historia, paisajes impresionantes y una rica tradición que te sorprenderá.</p>
+    </section>
+
+    <section id="carrusel" class="section">
+        <div class="carrusel-container">
+            <div class="carrusel-slide">
+                <img src="panoramica1.jpg" alt="Panorámica 1 de Nambacola">
+                <img src="Religuion.jpg" alt="Panorámica 2 de Nambacola">
+                <img src="panoramica2.jpg" alt="Panorámica 3 de Nambacola">
+                <img src="tradicion.jpg" alt="Panorámica 4 de Nambacola">
+                <img src="agricultura.jpg" alt="Panorámica 5 de Nambacola">
+            </div>
+            <button class="carrusel-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carrusel-btn next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="atractivos" class="section">
+        <h2>Atractivos Turísticos</h2>
+        <div class="tarjetas">
+            <article class="tarjeta">
+                <img src="Ingahurco.JPG" alt="El Ingahurco">
+                <h3>El Ingahurco</h3>
+                <p>Volcán inactivo con cuevas y restos arqueológicos de la época incaica.</p>
+            </article>
+            <article class="tarjeta">
+                <img src="Piedra grande.jpg" alt="La Piedra Grande">
+                <h3>La Piedra Grande</h3>
+                <p>Roca de 80 metros con una cruz iluminada en su cumbre y vistas al valle de Gerinoma.</p>
+            </article>
+            <article class="tarjeta">
+                <img src="Cavernas.JPG" alt="Cavernas de Codorhuasi">
+                <h3>Cavernas de Codorhuasi</h3>
+                <p>Cavernas místicas consideradas sagradas por las tribus indígenas locales.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="gastronomia" class="section">
+        <h2>Gastronomía</h2>
+        <p>La gastronomía Nambacolense es rica y variada, con platos típicos como el caldo de gallina criolla y el estofado.</p>
+        <img src="Caldo de galina.jpeg" alt="Platos típicos de Nambacola" class="gastronomia-img">
+        <img src="Estofado de gallina.jpeg" alt="Platos típicos de Nambacola" class="gastronomia-img">
+    </section>
+
+    <section id="cultura" class="section">
+        <h2>Cultura</h2>
+        <p>La parroquia Nambacola tiene una hermosa tradición cultural, como las festividades del patrono.<br>San Juan Bautista donde se celebran con danzas, juegos pirotécnicos y procesiones.</p>
+        <img src="San Juan Bautista.jpeg" alt="Fiesta del patrono de la parroquia" class="cultura-img">
+    </section>
+
+    <section id="auspiciantes" class="section">
+        <h2>Auspiciantes</h2>
+        <div class="auspiciantes-container">
+            <div class="auspiciante">
+                <img src="Nambacola online.jpg" alt="Logo Auspiciante 1">
+            </div>
+            <div class="auspiciante">
+                <img src="La voz del ingahurco.jpg" alt="Logo Auspiciante 2">
+            </div>
+            <div class="auspiciante">
+                <img src="Gad Gonzanamá.jpeg" alt="Logo Auspiciante 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="text-align: center; font-size: 12px; color: rgb(23, 23)">
+            <h3>Página Web diseñada por Vanessa Pinta, 2025</h3>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
