@@ -7,6 +7,21 @@ body {
     line-height: 1.6;
 }
 
+body.dark-theme {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark-theme nav {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .tarjeta {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #f4f4f4;
+}
+
 nav {
     background-color: #333;
     color: #fff;
@@ -37,52 +52,12 @@ nav ul li a {
     font-size: 1.5em;
 }
 
+
 .section {
     padding: 5px;
     text-align: center;
 }
 
-.tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-}
-
-.tarjeta {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.gastronomia-container, .cultura-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;  
-    padding: 10px 0;
-}
-
-.gastronomia-img, .cultura-img {
-    width: 300px;  
-    height: 200px;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-    margin: 10px;  
-}
 
 .carrusel-container {
     position: relative;
@@ -96,14 +71,15 @@ nav ul li a {
 .carrusel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .carrusel-slide img {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-radius: 10px;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
 .carrusel-btn {
@@ -132,26 +108,51 @@ nav ul li a {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-body.dark-theme {
-    background-color: #1b1a1a;
-    color: #f4f4f4;
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
 }
 
-.dark-theme nav {
-    background-color: #222;
-    color: #fff;
+.tarjeta {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.dark-theme .tarjeta {
-    background-color: #333;
-    border: 1px solid #444;
-    color: #f4f4f4;
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.gastronomia-container, 
+.cultura-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.gastronomia-img, 
+.cultura-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 10px;
 }
 
 #auspiciantes {
-    background-color: #4643438d;
+    background-color: rgba(70, 67, 67, 0.55);
     padding: 5px 10px;
-    text-align: center;
 }
 
 .auspiciantes-container {
@@ -162,16 +163,9 @@ body.dark-theme {
     padding: 5px 0;
 }
 
-.auspiciante {
-    text-align: center;
-    flex-shrink: 0;
-    margin-bottom: 20px; 
-}
-
 .auspiciante img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    margin-bottom: 10px;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
