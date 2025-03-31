@@ -42,7 +42,6 @@ nav ul li a {
     text-align: center;
 }
 
-
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +148,6 @@ body.dark-theme {
     color: #f4f4f4;
 }
 
-
 #auspiciantes {
     background-color: #4643438d;
     padding: 5px 10px;
@@ -169,7 +167,6 @@ body.dark-theme {
     flex-shrink: 0;
     margin-bottom: 20px; 
 }
-
 
 .auspiciante img {
     width: 100px;
