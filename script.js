@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const targetElement = document.getElementById(targetId);
             
             if (targetElement) {
-                const headerOffset = document.querySelector("header")?.offsetHeight || 0; // Ajusta si hay una barra fija
+                const headerOffset = document.querySelector("header")?.offsetHeight || 0; 
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.scrollY - headerOffset;
                 
